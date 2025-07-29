@@ -1,0 +1,33 @@
+<p>HTTP Raider is a unique Burp extension designed for advanced interaction and control over HTTP servers and proxies using persistent TCP/TLS connections. It offers complete visibility of HTTP messages without any automatic parsing and provides direct access to request and response queues. To simplify the modeling of intricate proxy behavior and network interactions, HTTP Raider comes with a visual drag and drop interface and a built-in testing framework.</p>
+
+<h2>Features</h2>
+<p>Here are a few of the many features HTTP Raider provides:</p>
+<ul>
+    <li>Organizes your work into sessions, with each session representing a network target used to model and test its behavior over persistent HTTP connections</li>
+    <li>Offers an unobstructed view of HTTP messages, enabling you to interact with target domains like servers or proxies via independent TCP/TLS connections</li>
+    <li>Includes a network tab that visually models the network structure</li>
+    <li>Allows creation of persistent connections to a domain or IP address for interaction with HTTP servers or proxies through TCP or TLS sockets. Send requests to a stream tab from Burp by right-clicking a request and selecting <code class=InlineCode>Extensions -&gt; HTTP Raider</code></li>
+    <li>Comes with a built-in connection bar that shows connection status which can be Disconnected, Connected, Connecting, or Connection error</li>
+    <li>Equipped with HTTP editors for viewing and managing traffic at different stages of connection</li>
+</ul>
+
+<h2>Usage</h2>
+<p>To configure aspects of a connection, you can define the Host (target domain or IP address), Port (the port to connect to on the target server), and enable TLS for a secure connection.</p>
+
+<p>The Stream tab allows you the freedom to interact with a specific connection. Here, you can use various controls to:</p>
+<ul>
+    <li>Start a new connection and send data from the Client request editor</li>
+    <li>Send data from the Client request editor if youre already connected</li>
+    <li>End the current connection</li>
+    <li>Reset the connection every time new data is sent</li>
+</ul>
+
+<p>The extension also features multiple HTTP editors for the manipulation of traffic at different stages of the connection. This includes panels such as:</p>
+
+<ul>
+    <li><strong>Client Request:</strong> Here you can add bytes that will be sent through the socket. This panel is similar to Burp Repeaters request editor and has options to show non-printable characters, hide headers, and view in Pretty/Raw/Hex views.</li>
+    <li><strong>Request Queue:</strong> This panel allows you to view all requests sent through the current connection, as if on a server or proxys HTTP request queue. This enables you to review all sent requests in full byte sequence on the stream.</li>
+    <li><strong>Response Queue:</strong> Here, you can view all response bytes received over the current connection, giving an unprocessed, continuous view of server responses as they are received by the socket. This panel doesnt apply any parsing or decoding to responses, unlike Repeaters response view.</li>
+    <li><strong>Proxy Editors:</strong> These are only shown when you send proxies from the Network tab to the stream. They enable you to test how the proxy parses request data when connected to your target domain.</li>
+</ul>
+<p>With HTTP Raider, you can quickly view and edit features of the request using the interactive features in the Stream tools side panel. This functionality allows you to take full control over HTTP connections and tailor them to your specific needs.</p>
