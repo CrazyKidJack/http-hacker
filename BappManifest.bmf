@@ -3,7 +3,7 @@ ExtensionType: 1
 Name: HTTP Hacker
 RepoName: http-hacker
 ScreenVersion: 1.0.0
-SerialVersion: 1
+SerialVersion: 2
 MinPlatformVersion: 22
 ProOnly: False
 Author: Martin Doyhenard, PortSwigger
