@@ -4,10 +4,10 @@ Name: HTTP Hacker
 RepoName: http-hacker
 ScreenVersion: 1.0.0
 SerialVersion: 1
-MinPlatformVersion: 0
+MinPlatformVersion: 22
 ProOnly: False
-Author: mdoyhenard
-ShortDescription: HTTP Raider is a Burp extension for advanced HTTP servers and proxies interaction over TCP/TLS connections. It allows full control over HTTP connections, visibility of HTTP messages, and access to request and response queues.
+Author: Martin Doyhenard, PortSwigger
+ShortDescription: Provides complete visibility of HTTP messages without any automatic parsing and direct access to request and response queues.
 EntryPoint: HTTP-Raider.jar
 BuildCommand: ./gradlew build test
 SupportedProducts: Pro, Community
