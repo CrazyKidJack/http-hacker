@@ -94,7 +94,7 @@ public class NetworkController {
         networkBar.setAutoLayoutActionListener(e -> reloadAll(true));
         networkBar.setDiscoverActionListener(e -> {
             DiscoverNetworkPanel panel = new DiscoverNetworkPanel(HTTPRaiderExtension.API, this);
-            JDialog dialog = new JDialog((Frame) null, "Network Discovery", true);
+            JDialog dialog = new JDialog((Frame) null, "Network Discovery");
             dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
             dialog.setContentPane(panel);
             dialog.setSize(800, 500);
